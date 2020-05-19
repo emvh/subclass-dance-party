@@ -14,4 +14,12 @@ ShakyDancer.prototype.step = function() {
     left: this.left
   };
   this.$node;
+
+  var current = this;
+
+  this.$node.on('mouseenter', function() {
+    current.$node.css("background-image", "url('../photos/newjelly.png')");
+  }).on('mouseout', function() {
+    current.$node.css("background-image", "url('../photos/jellyfish.png')");
+  });
 };

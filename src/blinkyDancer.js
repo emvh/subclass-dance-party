@@ -35,4 +35,11 @@ BlinkyDancer.prototype.step = function() {
     left: this.left
   };
   this.$node.toggle();
+
+  BlinkyDancer.prototype.lineup = function() {
+    for (var i = 0; i < window.dancers.length; i++) {
+
+    }
+  };
+
 };
