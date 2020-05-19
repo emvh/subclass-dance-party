@@ -58,3 +58,11 @@ Dancer.prototype.lineUp = function() {
   };
   this.$node.css(styleSettings);
 };
+
+Dancer.prototype.breakLine = function() {
+  var styleSettings = {
+    top: $("body").height() * Math.random(),
+    left: $("body").width() * Math.random()
+  };
+  this.$node.css(styleSettings);
+};

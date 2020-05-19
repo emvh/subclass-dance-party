@@ -28,7 +28,7 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
       $("body").width() * Math.random(),
-      Math.random() * 2000
+      Math.random() * 2500
     );
     console.log('this is the dancer: ', dancer);
     window.dancers.push(dancer);
@@ -39,6 +39,12 @@ $(document).ready(function() {
   $('.lineupButton').on('click', function() {
     window.dancers.forEach(dancer => {
       dancer.lineUp();
+    });
+  });
+
+  $('.breaklineButton').on('click', function() {
+    window.dancers.forEach(dancer => {
+      dancer.breakLine();
     });
   });
 
